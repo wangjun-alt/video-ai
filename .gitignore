@@ -1,0 +1,39 @@
+# 文件: .gitignore
+# 模块: 版本管理
+# 功能: 排除本地凭据、依赖、缓存和运行产物，保留源码与示例配置。
+
+# Python 环境、缓存和打包产物
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# 前端依赖和构建缓存
+node_modules/
+.vite/
+
+# 本地配置和敏感凭据
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# 本地运行和验证产物
+artifacts/
+*.log
+
+# 编辑器和操作系统文件
+.idea/
+.vscode/
+.DS_Store
